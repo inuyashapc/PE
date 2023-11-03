@@ -9,6 +9,7 @@ import Dropdowns from "./Pages/Dropdown";
 import CloneForms from "./Pages/Forms";
 import Buttons from "./Pages/Button";
 import Navbars from "./Pages/Navbar";
+import Cards from "./Pages/Card";
 
 function App() {
   return (
@@ -52,6 +53,11 @@ function App() {
             Navbar
           </Nav.Link>
         </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/card" eventKey="disabled">
+            Card
+          </Nav.Link>
+        </Nav.Item>
       </Nav>
       <Routes>
         <Route path="/" element={<Production />}></Route>
@@ -62,6 +68,7 @@ function App() {
         <Route path="/form" element={<CloneForms />}></Route>
         <Route path="/button" element={<Buttons />}></Route>
         <Route path="/navbar" element={<Navbars />}></Route>
+        <Route path="/card" element={<Cards />}></Route>
       </Routes>
     </Router>
   );
